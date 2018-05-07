@@ -1,0 +1,52 @@
+﻿<Controls:MetroWindow x:Class="OREX.AddEmployee"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro" GlowBrush="Black"
+        Title="ADD EMPLOYEE" Height="511.336" Width="689"  ResizeMode="NoResize" ShowInTaskbar="True" WindowStartupLocation="CenterScreen" WindowTitleBrush="#FF001834" ShowMaxRestoreButton="False" ShowMinButton="False" Loaded="MetroWindow_Loaded">
+    <Grid>
+
+
+        <Button x:Name="button" Margin="429,416,22,10" Click="button_Click">
+            <StackPanel Orientation="Horizontal">
+                <Rectangle Width="20" Height="20"
+                Fill="{Binding Path=Foreground, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Button}}}">
+                    <Rectangle.OpacityMask>
+                        <VisualBrush Stretch="Fill" Visual="{DynamicResource appbar_save}" />
+                    </Rectangle.OpacityMask>
+                </Rectangle>
+                <Label Content="SAVE" />
+            </StackPanel>
+        </Button>
+        <TextBox x:Name="tbFirstName" HorizontalAlignment="Left" Height="26" Margin="101,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="231"/>
+        <Label x:Name="label_Copy3" Content="F. Name" HorizontalAlignment="Left" Margin="10,62,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbLastName" HorizontalAlignment="Left" Height="26" Margin="101,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="231"/>
+        <Label x:Name="label_Copy4" Content="L. Name" HorizontalAlignment="Left" Margin="10,94,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbJobTitle" HorizontalAlignment="Left" Height="26" Margin="101,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="231"/>
+        <Label x:Name="label_Copy5" Content="Job Title" HorizontalAlignment="Left" Margin="10,124,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbEmail" HorizontalAlignment="Left" Height="26" Margin="101,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="231"/>
+        <Label x:Name="label_Copy6" Content="Email" HorizontalAlignment="Left" Margin="10,156,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy" FontWeight="Bold"  Content="Employee" HorizontalAlignment="Left" Margin="11,31,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1_Copy" FontWeight="Bold" Content="Contact Number" HorizontalAlignment="Left" Margin="10,234,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbPhone1" HorizontalAlignment="Left" Height="26" Margin="101,268,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="231"/>
+        <Label x:Name="label_Copy8" Content="Phone 1" HorizontalAlignment="Left" Margin="10,268,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbPhone2" HorizontalAlignment="Left" Height="26" Margin="101,299,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="231"/>
+        <Label x:Name="label_Copy9" Content="Phone 2" HorizontalAlignment="Left" Margin="10,299,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbPhone3" HorizontalAlignment="Left" Height="26" Margin="101,330,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="231"/>
+        <Label x:Name="label_Copy10" Content="Phone 3" HorizontalAlignment="Left" Margin="10,330,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbPhone4" HorizontalAlignment="Left" Height="26" Margin="101,361,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="231"/>
+        <Label x:Name="label_Copy11" Content="Phone 4" HorizontalAlignment="Left" Margin="10,361,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1_Copy1" FontWeight="Bold" Content="Address" HorizontalAlignment="Left" Margin="339,22,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbStreet" HorizontalAlignment="Left" Height="26" Margin="430,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="231"/>
+        <Label x:Name="label_Copy13" Content="Street" HorizontalAlignment="Left" Margin="339,53,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbCity" HorizontalAlignment="Left" Height="26" Margin="430,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="231"/>
+        <Label x:Name="label_Copy14" Content="City" HorizontalAlignment="Left" Margin="339,84,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbProvince" HorizontalAlignment="Left" Height="26" Margin="430,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="231"/>
+        <Label x:Name="label_Copy15" Content="Province" HorizontalAlignment="Left" Margin="339,116,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbCountry" HorizontalAlignment="Left" Height="26" Margin="430,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="231"/>
+        <Label x:Name="label_Copy16" Content="Country" HorizontalAlignment="Left" Margin="339,147,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbPCode" HorizontalAlignment="Left" Height="26" Margin="430,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="231"/>
+        <Label x:Name="label_Copy17" Content="P.Code" HorizontalAlignment="Left" Margin="339,178,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy12" FontWeight="Bold" Content="Notes" HorizontalAlignment="Left" Margin="337,234,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbNotes" TextWrapping="Wrap" AcceptsReturn="True" HorizontalAlignment="Left" Height="119" Margin="339,268,0,0" VerticalAlignment="Top" Width="322"/>
+    </Grid>
+</Controls:MetroWindow>
